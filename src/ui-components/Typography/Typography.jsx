@@ -2,14 +2,12 @@ import './Typography.scss'
 
 function Typography({
   as: Component = 'p',
-  type = 'text-preset-5',
-  color,
+  type = 'body',
   className = '',
   children,
 }) {
   const classes = [
     type,
-    color,
     className,
   ]
     .filter(Boolean)

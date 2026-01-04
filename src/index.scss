@@ -10,17 +10,14 @@ body {
 
 :root {
   /* Font */
-  --font-primary: 'Red Hat Display', sans-serif;
+  --font-primary: 'Space Grotesk', sans-serif;
 
   /* Colors */
-  --color-cyan-600: #4D96A9;
-  --color-cyan-300: #8FE3F9;
-  --color-purple-600: #855FB1;
-  --color-purple-300: #D9B8FF;
-  --color-slate-900: #28283D;
-  --color-slate-600: #87879D;
-  --color-slate-300: #D1D1DF;
-  --color-white: #FAFAFA;
+  --color-black: #151515;
+  --color-dark-grey: #242424;
+  --color-green: #4EE1A0;
+  --color-grey: #d9d9d9;
+  --color-white: #ffffff;
 
   /* Spacing scale */
   --space-50: 4px;
