@@ -1,0 +1,27 @@
+.button {
+  font-weight: bold;
+  padding: var(--space-200) var(--space-500);
+  border-radius: 29px;
+  border: 0;
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-50);
+
+  &.blue {
+    background-color: var(--color-cyan-600);
+
+    &:hover {
+      background-color: #71C0D4;
+      cursor: pointer;
+    }
+  }
+
+  &.purple {
+    background-color: var(--color-purple-600);
+
+    &:hover {
+      background-color: #B18BDD;
+      cursor: pointer;
+    }
+  }
+}
