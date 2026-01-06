@@ -1,4 +1,7 @@
 .design-system {
   height: 100vh;
   background: var(--color-black);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-250);
 }
