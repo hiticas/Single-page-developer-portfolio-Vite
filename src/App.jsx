@@ -1,10 +1,12 @@
 import './App.scss'
-import Header from './Sections/Header/Header'
+import Header from './sections/Header/Header'
+import Hero from './sections/Hero/Hero'
 
 function App() {
   return (
     <div className="app">
       <Header />
+      <Hero />
     </div>
   )
 }
