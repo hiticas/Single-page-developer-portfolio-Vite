@@ -1,0 +1,56 @@
+.skills {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  margin: 0 16px 80px;
+  padding: 40px 0;
+  position: relative;
+
+  .row {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .rings {
+    position: absolute;
+    bottom: -65px;
+    right: -300px;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .skills {
+    margin: 0 32px 100px;
+    gap: 52px;
+    border-bottom: none;
+    padding: 52px 0 0;
+    .row {
+      flex-direction: row;
+
+      .skill {
+        flex: 1;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .skills {
+    padding: 72px 0 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .skills {
+    margin: 0 auto 140px;
+    max-width: 1100px;
+  }
+}

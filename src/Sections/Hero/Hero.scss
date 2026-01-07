@@ -126,7 +126,6 @@
     overflow: visible;
 
     .developer-image-wrapper {
-
       .profile-image-tablet {
         display: none;
       }
@@ -182,6 +181,10 @@
         right: 350px;
         bottom: -115px;
       }
+    }
+    
+    .hero-content {
+      margin-left: 0;
     }
   }
 }

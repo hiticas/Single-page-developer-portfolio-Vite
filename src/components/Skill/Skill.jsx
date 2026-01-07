@@ -1,10 +1,11 @@
+import Typography from '../../ui-components/Typography/Typography'
 import './Skill.scss'
 
-function Skill() {
+function Skill({ skill, years }) {
   return (
     <div className="skill">
-      <h2>Skill</h2>
-      <h2>Years</h2>
+      <Typography as="h2" type="heading-l">{skill}</Typography>
+      <Typography type="body">{years}</Typography>
     </div>
   )
 }
