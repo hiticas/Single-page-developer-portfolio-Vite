@@ -20,9 +20,11 @@ function Hero() {
       <div className="hero-content">
         <Typography as="h1" type="heading-xl" className="hero-title">Nice to <br className="break"/> meet you! <br className="break-2"/>I’m <span className='green-underline'>Adam Keyes.</span></Typography>
         <Typography type="body" className="hero-subtitle">Based in the UK, I’m a front-end developer passionate about building accessible web apps that users love.</Typography>
-        <Button aria-label="Contact">
-          <Typography as="span" type="body-btn">Contact me</Typography>
-        </Button>
+        <a href="mailto:adamkeyes@example.com">
+          <Button aria-label="Contact">
+            <Typography as="span" type="body-btn">Contact me</Typography>
+          </Button>
+        </a>
       </div>
     </div>
   )

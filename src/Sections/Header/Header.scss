@@ -40,3 +40,9 @@
     }
   }
 }
+
+@media (min-width: 1200px) {
+  .header {
+    padding: var(--space-400) 0 0;
+  }
+}
