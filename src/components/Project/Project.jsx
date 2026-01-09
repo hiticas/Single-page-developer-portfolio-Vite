@@ -5,8 +5,18 @@ import './Project.scss';
 function Project({ image, title, languages = [], links = [] }) {
   return (
     <div className="project">
-      <img className="image" src={image} alt={title} />
-
+      <div className='wrapper-image'>
+        <img className="image" src={image} alt={title} />
+        <div className="project-links-desktop">
+          {links.map((link, index) => (
+            <a href={link.url} key={index} className="project-link" target="_blank" rel="noopener noreferrer">
+              <Button aria-label="Contact">
+                <Typography as="span" type="body-btn">{link.label}</Typography>
+              </Button>
+            </a>
+          ))}
+        </div>
+      </div>
       <div className="project-info">
         <Typography as="h3" type="heading-m" className="project-title">{title}</Typography>
 

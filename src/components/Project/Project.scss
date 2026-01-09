@@ -1,8 +1,12 @@
 .project {
-  .image {
-    width: 100%;
+  .wrapper-image {
+    .image {
+      width: 100%;
+    }
+    .project-links-desktop {
+      display: none;
+    }
   }
-
   .project-info {
     .project-title {
       margin-bottom: 8px;
@@ -21,6 +25,42 @@
         .button {
           max-width: none;
         }
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .project {
+    .wrapper-image {
+      position: relative;
+      .project-links-desktop {
+        flex-direction: column;
+        gap: 32px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.7);
+        cursor: pointer;
+        align-items: center;
+        justify-content: center;
+        .project-link {
+          .button {
+            max-width: none;
+          }
+        }
+      }
+      &:hover {
+        .project-links-desktop {
+          display: flex;
+        }
+      }
+    }
+    .project-info {
+      .project-links {
+        display: none;
       }
     }
   }
