@@ -12,10 +12,10 @@ function Input({
   return (
     <div className={classes}>
       <input
+        name='input'
         className={`input ${hasError ? 'input-error' : ''}`}
         aria-invalid={hasError}
         aria-describedby={hasError ? 'input-error' : undefined}
-        id='input-field'
         {...props}
       />
 

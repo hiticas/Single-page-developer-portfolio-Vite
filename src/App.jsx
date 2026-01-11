@@ -1,4 +1,5 @@
 import './App.scss'
+import Contact from './sections/Contact/Contact'
 import Header from './sections/Header/Header'
 import Hero from './sections/Hero/Hero'
 import Projects from './sections/Projects/Projects'
@@ -11,6 +12,7 @@ function App() {
       <Hero />
       <Skills />
       <Projects />
+      <Contact />
     </div>
   )
 }
